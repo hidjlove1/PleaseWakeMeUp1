@@ -36,8 +36,9 @@ public class MainActivity extends AppCompatActivity{
         // 알람매니저 설정
         alarm_manager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
-        // 타임피커 설정
+        // 타임피커 설정 (24시간으로)
         alarm_timepicker = findViewById(R.id.time_picker);
+        alarm_timepicker.setIs24HourView(true);
 
         // Calendar 객체 생성
         final Calendar calendar = Calendar.getInstance();
